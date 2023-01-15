@@ -1,0 +1,37 @@
+.base{
+    height: 50px;
+    width: 100%;
+    justify-self: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 100%;
+}
+.slider{
+    width: calc(100% - 50px);
+    height: 100%;
+    position: relative;
+    left: 50px;
+    overflow: hidden;
+}
+.dynamic{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.subComponents{
+
+height: 35px;
+width: 35px;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}

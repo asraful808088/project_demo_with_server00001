@@ -1,0 +1,52 @@
+.root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+::placeholder {
+  color: rgb(199, 199, 199);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(199, 199, 199);
+}
+
+::-ms-input-placeholder {
+  color: rgb(199, 199, 199);
+}
+.inputBox {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: dotted 1px rgb(255, 255, 255);
+
+  box-sizing: border-box;
+}
+.error {
+  font-size: 15px;
+  color: red;
+}
+.inputBox .icon {
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+.input {
+  font-family: "Lobster Two", cursive;
+  font-weight: 900;
+  font-size: 20px;
+  width: calc(100% - 30px);
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding-right: 5px;
+}

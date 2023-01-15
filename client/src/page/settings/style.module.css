@@ -1,0 +1,191 @@
+.root {
+  position: relative;
+  width: 100%;
+  
+  background-color: rgb(51, 31, 33);
+}
+.root .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  color: aliceblue;
+  height: 200px;
+}
+.root .header .logo {
+    cursor: pointer;
+}
+.root .header .headerName {
+  font-size: 50px;
+}
+.root .header > * {
+  width: 300px;
+  position: relative;
+}
+.contentBox {
+  width: 1200px;
+  height: auto;
+  position: relative;
+  display: flex;
+}
+.root .contentBox .tab {
+  width: 30%;
+  height: 700px;
+  border-right: 2px solid rgb(124, 16, 16);
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root .contentBox .tab h1 {
+  margin: 0 auto;
+  color: aliceblue;
+}
+.root .contentBox .tab .Button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.root .contentBox .tab .Button div {
+  height: 60px;
+  cursor: pointer;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.root .contentBox .tabResult {
+  width: 70%;
+  position: relative;
+}
+.root .contentBox .tabResult .update {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  flex-direction: column;
+  align-items: center;
+}
+.changefields {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.changefields .fieldsBox {
+  width: 500px;
+  position: relative;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.changefields .fieldsBox .items {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 400px) {
+  .contentBox {
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .root .contentBox .tab {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+    flex-direction: row;
+  }
+  .root .contentBox .tab h1 {
+    width: fit-content;
+  }
+  .root .contentBox .tabResult {
+    width: 100%;
+    position: relative;
+  }
+  .root .contentBox .tab .Button {
+    flex-direction: row;
+    width: 100%;
+  }
+  .root .contentBox .tab .Button div {
+    height: 60px;
+    width: 150px;
+  }
+  .changefields .fieldsBox {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contentBox {
+    width: 700px;
+    flex-direction: column;
+  }
+ 
+  .root .contentBox .tab > * {
+    margin: 0 auto;
+  }
+  .changefields .fieldsBox {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contentBox {
+    width: 900px;
+    flex-direction: row;
+    height: 100%;
+    
+  }
+  .root .contentBox .tabResult {
+    width: 70%;
+    position: relative;
+  }
+  .root .contentBox .tab {
+    width: 300px;
+    height: 700px;
+    
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+  .root .contentBox .tab h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .root .contentBox .tab .Button {
+    flex-direction: column;
+    width: 95%;
+  }
+  .root .contentBox .tab .Button div {
+    height: 60px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contentBox {
+    width: 1200px;
+  }
+  .root .contentBox .tab {
+    width: 300px;
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .root {
+    width: 2000px;
+  }
+}

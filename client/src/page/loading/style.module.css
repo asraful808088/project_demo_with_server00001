@@ -1,0 +1,83 @@
+.root {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(rgb(44, 18, 18), rgb(68, 30, 30));
+}
+.root .name {
+  font-size: 70px;
+  color: aliceblue;
+}
+.root .logo {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .logo .items {
+  position: absolute;
+}
+.root .logo .items:nth-child(2) {
+  width: 10%;
+  top: -10%;
+  opacity: 0;
+  transform: translate(var(--i)) scale(0);
+  animation: smokeAnimation 1s infinite;
+}
+.root .logo .items:nth-child(4) {
+  width: 20%;
+  top: -20%;
+  transform: translate(var(--i)) scale(0);
+  opacity: 0;
+  animation: smokeAnimation 1s infinite 0.5s;
+}
+
+.root .logo .items:nth-child(3) {
+  width: 20%;
+  top: -20%;
+  transform: translate(var(--i)) scale(0);
+  opacity: 0;
+  animation: smokeAnimation 1s infinite 1.2s;
+  transform-origin: bottom;
+}
+
+@keyframes smokeAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(var(--i)) scale(0);
+    transform-origin: bottom;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(var(--i)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: top;
+    transform: translate(var(--i)) scale(0);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .root .name {
+    font-size: 50px;
+  }
+  .root .logo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .root .name {
+    font-size: 30px;
+  }
+}

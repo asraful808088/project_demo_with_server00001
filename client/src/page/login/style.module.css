@@ -1,0 +1,41 @@
+.root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.root .header {
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 50px;
+  font-weight: 900;
+}
+.root .items {
+  height: 60px;
+  width: 100%;
+}
+.root .link {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 400px){
+  .root .header{
+      display: none;
+  }
+  .root .blank{
+    display: flex;
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .root .blank{
+    display: none;
+  }
+  .root .header{
+    display: flex;
+}
+}
+

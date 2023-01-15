@@ -1,0 +1,584 @@
+.mainRoot {
+  display: flex;
+}
+.root {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  transition: 0.1s;
+}
+.root .header {
+  width: 100%;
+  position: relative;
+  background: url("./../../assest/bg/home/homecoffee.jpg");
+}
+.mainRoot > .navigation {
+  position: relative;
+  height: 100vh;
+
+  background-color: rgb(56, 26, 26);
+  z-index: 110;
+  transition: 0.1s;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.mainRoot > .navigation > .Logo {
+  width: 95%;
+  position: relative;
+  margin: auto;
+}
+.mainRoot > .navigation > .items {
+  position: relative;
+
+  z-index: 110;
+
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.mainRoot > .navigation .items .item {
+  width: 95%;
+  height: 80px;
+  cursor: pointer;
+  z-index: 110;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.089);
+  margin: auto;
+}
+.root > .hr {
+  height: 4px;
+  width: 50%;
+  margin-top: 5px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+}
+.root h1 {
+  font-size: 100px;
+  color: rgb(44, 28, 28);
+  text-align: center;
+}
+.logo_navigation {
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+.logo_navigation .items {
+  width: 50%;
+}
+.headerContainer {
+  height: 72%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.headerContainer .domeText {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  color: aliceblue;
+  font-size: 22px;
+}
+.headerContainer .headertext {
+  width: 50%;
+  height: auto;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  position: relative;
+  left: 50%;
+  justify-content: center;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+.headerContainer .headertext p {
+  margin: 0;
+  margin: 20px;
+}
+.headerContainer .hr {
+  height: 4px;
+  width: 50%;
+  left: 50%;
+  margin-top: 5px;
+  position: relative;
+
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.headerContainer .button {
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin-top: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerContainer .button .items {
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s;
+  color: aliceblue;
+}
+.headerContainer .button .items:hover {
+  border: 0px solid white;
+  background-color: aliceblue;
+  color: rgb(46, 20, 20);
+}
+.logo_navigation .items .logo {
+  margin-right: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.logo_navigation .items .sideButtonBox {
+  height: 50%;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.logo_navigation .items .sideButtonBox .button {
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+}
+.logo_navigation > .items > .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.logo_navigation > .items > .navigation > .link {
+  color: gray;
+  cursor: pointer;
+}
+.logo_navigation > .items > .navigation > .link:hover {
+  color: white;
+}
+.root .container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.root .container .items {
+  flex-basis: 300px;
+  margin: 20px;
+  background-color: rgb(56, 26, 30);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.root .container .items .pic {
+  position: relative;
+  transition: 1s;
+  overflow: hidden;
+}
+.root .container .items .pic img {
+  transition: 1s;
+  transform: scale(1);
+}
+
+.root .container .items .pic > p {
+  position: absolute;
+  z-index: 11;
+  top: 5%;
+  left: 3%;
+  font-size: 20px;
+  color: white;
+}
+.root .container .items .pic:hover img {
+  transform: scale(1.2);
+}
+.root .container .items .details {
+  height: 200px;
+  color: aliceblue;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.root .container .items .details .price {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  top: 10%;
+  display: flex;
+  align-items: center;
+}
+.root .container .items .details .price .rate {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.root .container .items .details .price .buy {
+  width: 50%;
+  height: 50px;
+  background-color: rgb(222, 235, 235);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+}
+.root .offer {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.root .offer .item {
+  position: relative;
+  margin: 5px;
+}
+.root .offer .item p {
+  position: absolute;
+  z-index: 11;
+  top: 7%;
+  left: 3%;
+  font-size: 30px;
+  color: white;
+}
+.root .offer .item:nth-child(2) p {
+  position: absolute;
+  z-index: 11;
+  top: 7%;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+}
+.root .footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(46, 27, 27);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+.root .footer .items {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root .footer .items hr {
+  width: 100%;
+}
+.root .footer .items h1 {
+  font-size: 50px;
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+.root .footer .items p {
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.root .footer .items .items {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.root .footer .items .items .icon {
+  position: relative;
+  height: 30px;
+  min-width: 30px;
+}
+.root .footer .items .items .text {
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+.root .footer .STitems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.root .footer .STitems .icon {
+  width: 20%;
+  margin: 8%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 400px) {
+  .mainRoot > .navigation {
+    display: flex;
+  }
+  .mainRoot > .navigation .items .item {
+    font-size: 20px;
+    height: 60px;
+  }
+  .root h1 {
+    font-size: 50px;
+  }
+  .logo_navigation .items .sideButtonBox .button {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo_navigation .items .logo {
+    width: 190px;
+  }
+  .root .offer {
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+  }
+  .logo_navigation .items:nth-child(1) {
+    justify-content: flex-end;
+    display: flex;
+  }
+  .logo_navigation .items:nth-child(1) {
+    order: 0;
+  }
+  .logo_navigation .items:nth-child(2) {
+    order: -1;
+  }
+  .root .offer .item:nth-child(1) p {
+    font-size: 2.2vw;
+  }
+  .root .offer .item:nth-child(2) p {
+    font-size: 2.2vw;
+  }
+  .logo_navigation .items .sideButtonBox {
+    justify-content: flex-start;
+  }
+  .logo_navigation > .items > .navigation,
+  .headerContainer .headertext,
+  .headerContainer .domeText,
+  .headerContainer .hr,
+  .headerContainer .button {
+    display: none;
+  }
+
+  .logo_navigation .items .sideButtonBox .button {
+    left: 50px;
+    margin-left: 20px;
+  }
+  .root .footer {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .root .footer .items{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .root .offer {
+    flex-direction: row;
+
+    width: 100%;
+  }
+
+  .mainRoot > .navigation .items .item {
+    font-size: 25px;
+    height: 80px;
+  }
+  .logo_navigation .items:nth-child(1) {
+    justify-content: flex-end;
+    display: flex;
+  }
+  .logo_navigation .items .sideButtonBox {
+    justify-content: flex-start;
+  }
+  .logo_navigation .items .logo {
+    width: 300px;
+  }
+  .logo_navigation .items .sideButtonBox .button {
+    height: 50px;
+    width: 50px;
+  }
+  .root .offer .item:nth-child(1) p {
+    font-size: 1.5vw;
+  }
+  .root .offer .item:nth-child(2) p {
+    font-size: 1.5vw;
+  }
+  .headerContainer .button .items {
+    height: 40px;
+    width: 120px;
+  }
+  .root .footer {
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .root .footer .items{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .root .offer {
+    flex-direction: row;
+
+    width: 900px;
+  }
+
+  .root h1 {
+    font-size: 100px;
+  }
+  .logo_navigation .items .logo {
+    width: 200px;
+  }
+  .headerContainer .headertext {
+    display: flex;
+    font-size: 30px;
+  }
+  .logo_navigation .items:nth-child(1) {
+    justify-content: flex-start;
+  }
+  .logo_navigation .items .sideButtonBox {
+    justify-content: flex-end;
+  }
+  .logo_navigation .items:nth-child(1) {
+    order: 0;
+  }
+  .logo_navigation .items:nth-child(2) {
+    order: 1;
+  }
+  .headerContainer .hr,
+  .headerContainer .button {
+    display: flex;
+  }
+  .headerContainer .domeText,
+  .headerContainer .headertext,
+  .headerContainer .button,
+  .headerContainer .hr {
+    width: 60%;
+    left: 40%;
+  }
+  .headerContainer .button .items {
+    height: 50px;
+    width: 120px;
+  }
+  .headerContainer .domeText {
+    font-size: 17px;
+    display: flex;
+  }
+  .headerContainer .headertext p {
+    margin: 0;
+    margin: 10px;
+  }
+  .root .offer .item:nth-child(1) p {
+    font-size: 1.9 vw;
+  }
+  .root .offer .item:nth-child(2) p {
+    font-size: 1.9 vw;
+  }
+  .mainRoot > .navigation {
+    display: flex;
+  }
+  .logo_navigation .items .sideButtonBox {
+    display: flex;
+  }
+  .root .footer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .root .offer {
+    width: 1200px;
+  }
+  .logo_navigation .items .logo {
+    width: 400px;
+  }
+  .headerContainer .headertext {
+    font-size: 70px;
+  }
+  .headerContainer .domeText {
+    font-size: 22px;
+  }
+  .headerContainer .headertext p {
+    margin: 20px;
+  }
+  .headerContainer .domeText,
+  .headerContainer .headertext,
+  .headerContainer .button,
+  .headerContainer .hr {
+    width: 50%;
+    left: 50%;
+  }
+  .headerContainer .button .items {
+    height: 60px;
+    width: 200px;
+  }
+  .mainRoot > .navigation {
+    display: none;
+  }
+  .logo_navigation > .items > .sideButtonBox {
+    display: none;
+  }
+  .root .offer .item:nth-child(1) p {
+    font-size: 1.2vw;
+  }
+  .root .offer .item:nth-child(2) p {
+    font-size: 1.2vw;
+  }
+  .logo_navigation > .items > .navigation {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .root .offer .item:nth-child(1) p {
+    font-size: 24px;
+  }
+  .root .offer .item:nth-child(2) p {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .root {
+    width: 2000px;
+  }
+}

@@ -1,0 +1,31 @@
+.base {
+  width: 50%;
+  height: 50px;
+  background: linear-gradient(
+    to top,
+    rgba(54, 29, 17, 0.562),
+    rgba(202, 202, 211, 0.637)
+  );
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 900px) {
+  .base {
+    width: 40%;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .base {
+    width: 50%;
+    height: 50px;
+  }
+}

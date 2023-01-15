@@ -1,0 +1,103 @@
+.root {
+  height: 100%;
+  width: 100%;
+  background: url("../assest/bg/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .subContainer {
+  height: 600px;
+  width: 1200px;
+  background-color: #37201d;
+  border-left: solid rgb(189, 189, 189) 2px;
+  border-top: solid rgb(189, 189, 189) 2px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(88, 88, 88, 0.5);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.root .subContainer .items {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.root .subContainer .items .logo {
+  height: 400px;
+  width: 350px;
+  position: relative;
+}
+
+.root .subContainer .items .card {
+  height: 100%;
+  width: 450px;
+  position: relative;
+}
+@media only screen and (min-width: 400px) {
+  .root .subContainer {
+    width: 90%;
+    height: 600px;
+  }
+  .root .subContainer .items {
+    position: absolute;
+    width: 100%;
+  }
+  .root .subContainer .items .card {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .root .subContainer {
+    width: 500px;
+    height: 600px;
+  }
+  .root .subContainer .items {
+    position: absolute;
+    width: 100%;
+  }
+  .root .subContainer .items .card {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .root .subContainer .items .logo {
+    height: 300px;
+    width: 250px;
+  }
+  .root .subContainer {
+    height: 500px;
+    width: 900px;
+  }
+  .root .subContainer .items {
+    position: relative;
+    width: 50%;
+  }
+  
+}
+@media only screen and (min-width: 1200px) {
+  .root .subContainer {
+    height: 600px;
+    width: 1200px;
+  }
+  .root .subContainer .items .logo {
+    height: 400px;
+    width: 350px;
+  }
+  .root .subContainer .items .card {
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .root {
+    width: 2000px;
+  }
+}
